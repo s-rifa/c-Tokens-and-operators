@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    int long z;
+    int x,y,i;
+    x=7;
+    cout<<"Decimal number = "<<x;
+    i=z=0;
+    while(x!=0){
+        y=x%2;
+        z+=y*(pow(10,i));
+        x=int(x/2);
+        i+=1;
+    }
+    cout<<"\nBinary number = "<<z;
+    return 0;
+}
