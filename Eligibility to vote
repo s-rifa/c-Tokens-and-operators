@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int x,y;
+    cout<<"Enter your age: ";
+    cin>>x;
+    if(x<18){
+        y=18-x;
+        printf("You are not elligible to vote.\nYou have to wait for %d years.",y);
+    }
+    else{
+        cout<<"You are elligible to vote.";
+    }
+    return 0;
+}
